@@ -15,14 +15,14 @@ interface LoginButtonHeaderProps {
 }
 
 function LoginButtonHeader({ userData, at }: LoginButtonHeaderProps) {
-  const [loginStatus, setLoginStatus] = useState(false);
-  const [hover, setHover] = useState(false); // State to track hover status
+  // const [loginStatus, setLoginStatus] = useState(false);
+  // const [hover, setHover] = useState(false); // State to track hover status
 
-  useEffect(() => {
-    // Fetch and set the login status from localStorage
-    const storedLoginStatus = localStorage.getItem("loginStatus") === "true";
-    setLoginStatus(storedLoginStatus);
-  }, []);
+  // useEffect(() => {
+  //   // Fetch and set the login status from localStorage
+  //   const storedLoginStatus = localStorage.getItem("loginStatus") === "true";
+  //   setLoginStatus(storedLoginStatus);
+  // }, []);
 
   const clearAllCookies = (domain: string) => {
     const cookies = document.cookie.split(";");
